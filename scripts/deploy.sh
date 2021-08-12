@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "  ----- clone application repository -----  "
+echo "  ----- Cloning application repo -----  "
 git clone https://github.com/Artemmkin/raddit.git
 
-echo "  ----- install dependent gems -----  "
+echo "  ----- Installing dependent gems -----  "
 cd ./raddit
 sudo bundle install
 
-echo "  ----- start the application -----  "
+echo "  ----- Starting the application -----  "
 sudo systemctl start raddit
 sudo systemctl enable raddit
