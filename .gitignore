@@ -5,7 +5,3 @@
 
 # Ansible
 *.retry
-
-# Vagrant
-.vagrant/
-*.log
